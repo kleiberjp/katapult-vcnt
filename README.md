@@ -5,7 +5,6 @@ This project contains the challengue resolution base on the doc described here [
 ## Key Capabilities
 * Vanilla **SwiftUI** + **Combine** implementation
 * Decoupled **Presentation**, **Business Logic**, and **Data Access** layers
-* Data persistence with **CoreData**
 * Native SwiftUI dependency injection
 * Simple yet flexible networking layer built on Generics
 * Built with SOLID in mind
