@@ -11,7 +11,7 @@ import SwiftUI
 struct Katapult_VCNTApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
     }
 }

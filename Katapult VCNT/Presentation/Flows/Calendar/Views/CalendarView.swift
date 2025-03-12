@@ -1,8 +1,7 @@
 import SwiftUI
 
 struct CalendarView: View {
-    @StateObject var viewModel: CalendarViewModel
-    @Environment(\.horizontalSizeClass) var sizeClass
+    @ObservedObject var viewModel: CalendarViewModel
     
     var body: some View {
         VStack(spacing: 0) {
@@ -14,19 +13,10 @@ struct CalendarView: View {
                 onNext: viewModel.moveToNextWeek
             )
             
-            if let calendarData = viewModel.calendarData {
-                CalendarGridView(
-                    data: calendarData,
-                    daysToShow: sizeClass == .compact ? 4 : 7
-                )
-            }
+            CalendarGridView(
+                viewModel: viewModel,
+                daysToShow: 7
+            )
         }
-        .overlay(
-            Group {
-                if viewModel.isLoading {
-                    ProgressView()
-                }
-            }
-        )
     }
 } 

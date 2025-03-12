@@ -9,7 +9,7 @@ struct Reservation: Identifiable, Equatable {
     let status: ReservationStatus
 }
 
-enum ReservationStatus {
+enum ReservationStatus: String {
     case confirmed
     case pending
     case cancelled
