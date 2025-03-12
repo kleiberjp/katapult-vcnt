@@ -1,6 +1,8 @@
 # Katapult VCNT
 
-This project contains the challengue resolution base on the doc described here [challengue katapult]()
+This project contains the challengue resolution base on the doc described here [challengue katapult](https://katapultlabs.notion.site/VCNT-iOS-Challenge-1aba0c818ff28018b8cbc2427b1e1dcd)
+
+
 
 ## Key Capabilities
 * Vanilla **SwiftUI** + **Combine** implementation
@@ -12,6 +14,10 @@ This project contains the challengue resolution base on the doc described here [
 
 
 ## Features
+
+ <img src="https://github.com/user-attachments/assets/1bc000cb-ad64-4fa0-9b2b-d2849c614b30" alt="katapult calendar view" width="250"> 
+
+**Calendar Screen:** The calendar screen presents a list of reservations grouped by rooms and show details like renevue and % occupancy
 
 ## Technologies Used
 - **SwiftUI:** Apple's declarative UI framework for building user interfaces.
